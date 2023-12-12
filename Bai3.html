@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            padding: 40px;
+        }
+
+        .title {
+            font-size: 27px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .input {
+            width: 200px;
+            height: 35px;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+        }
+
+        .input i {
+            display: inline-block;
+            padding: 0 7px;
+        }
+
+        .search {
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .btn {
+            padding: 10px 10px;
+            border-radius: 8px;
+        }
+
+        .active {
+            color: #fff;
+            background-color: rgb(122, 67, 250);
+        }
+
+        .main-content {
+            display: flex;
+            margin-top: 80px;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            display: flex;
+            width: 33.33%;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            height: 200px;
+            border-radius: 30px;
+        }
+        
+        .card-active {
+            border: 1px solid cyan;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .ava-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 18px;
+        }
+
+        .add {
+            font-weight: 500;
+        }
+
+        .units {
+            margin-top: 10px;
+        }
+
+        .unit-item {
+            border: 1px solid gray;
+            color: blue;
+            border-radius: 999px;
+            padding: 1px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Users</h1>
+        <div class="nav">
+            <div class="input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search" placeholder="Search users" type="text">
+            </div>
+            <div class="buttons">
+                <div class="btn">Repulation</div>
+                <div class="btn active">New users</div>
+                <div class="btn">Votes</div>
+                <div class="btn">Editors</div>
+                <div class="btn">Moderators</div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="card">
+                <img src="./avatar.jpg" alt="" class="ava-img">
+                <div class="info">
+                    <h3 class="name">Lelah Nichols</h3>
+                    <p class="add">Troy, Mi</p>
+                    <div class="units">
+                        <span class="unit-item">clothes</span>
+                        <span class="unit-item">stom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-active">
+                <img src="./avatar.jpg" alt="" class="ava-img">
+                <div class="info">
+                    <h3 class="name">Lelah Nichols</h3>
+                    <p class="add">Troy, Mi</p>
+                    <div class="units">
+                        <span class="unit-item">clothes</span>
+                        <span class="unit-item">stom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./avatar.jpg" alt="" class="ava-img">
+                <div class="info">
+                    <h3 class="name">Lelah Nichols</h3>
+                    <p class="add">Troy, Mi</p>
+                    <div class="units">
+                        <span class="unit-item">clothes</span>
+                        <span class="unit-item">stom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./avatar.jpg" alt="" class="ava-img">
+                <div class="info">
+                    <h3 class="name">Lelah Nichols</h3>
+                    <p class="add">Troy, Mi</p>
+                    <div class="units">
+                        <span class="unit-item">clothes</span>
+                        <span class="unit-item">stom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./avatar.jpg" alt="" class="ava-img">
+                <div class="info">
+                    <h3 class="name">Lelah Nichols</h3>
+                    <p class="add">Troy, Mi</p>
+                    <div class="units">
+                        <span class="unit-item">clothes</span>
+                        <span class="unit-item">stom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./avatar.jpg" alt="" class="ava-img">
+                <div class="info">
+                    <h3 class="name">Lelah Nichols</h3>
+                    <p class="add">Troy, Mi</p>
+                    <div class="units">
+                        <span class="unit-item">clothes</span>
+                        <span class="unit-item">stom</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

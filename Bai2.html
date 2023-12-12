@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hình tam giác</title>
+  <style>
+    #triangle {
+      font-family: monospace;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bài 2</h2>
+  <div>
+    <label for="inputNumber">Nhập số 1-10: </label>
+    <input type="number" id="inputNumber" min="1" max="10">
+    <div>
+        <button onclick="drawTriangle()">Vẽ tam giác</button>
+    </div>
+  </div>
+  <div id="triangle"></div>
+
+  <script>
+    function numberOneTriangle(number) {
+      let triangle = '';
+      for (let i = 1; i <= number; i++) {
+        for (let j = 1; j <= i; j++) {
+          triangle += '* ';
+        }
+        triangle += '<br>';
+      }
+      return triangle;
+    }
+
+    function drawTriangle() {
+      const inputNumber = parseInt(document.getElementById('inputNumber').value);
+      if (isNaN(inputNumber) || inputNumber < 1 || inputNumber > 10) {
+        document.getElementById('triangle').innerHTML = 'Vui lòng nhập số nguyên từ 1 đến 10.';
+        return;
+      }
+      const triangle = numberOneTriangle(inputNumber);
+      document.getElementById('triangle').innerHTML = triangle;
+    }
+  </script>
+</body>
+</html>
